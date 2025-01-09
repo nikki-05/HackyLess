@@ -1,0 +1,33 @@
+@keyframes wordAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .inline-block {
+    display: inline-block;
+  }
+  
+  .animate-word-animation {
+    animation: wordAnimation 0.5s ease forwards;
+  }
+  
+  .animate-delay-200 {
+    animation-delay: 0.2s;
+  }
+  
+  .animate-delay-400 {
+    animation-delay: 0.4s;
+  }
+  
+  .animate-delay-600 {
+    animation-delay: 0.6s;
+  }
+  
+  /* Continue adding more classes if you have more words */
+  
