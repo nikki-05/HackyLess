@@ -43,11 +43,13 @@ const App = () => {
             <Navbar/>
             <Hero/>
             <EventList/>
-          </>
+            <Footer/>
+
+           </>
         } />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/contact" element={<ContactForm />} />
-      </Routes>
+       </Routes>
       
     </Router>
   );
