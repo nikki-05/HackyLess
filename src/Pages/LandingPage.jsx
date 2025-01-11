@@ -1,5 +1,7 @@
 import React from 'react';
 import './LandingPage.css';
+import Footer from '../components/Footer';  // Ensure the path is correct
+
 
 const LandingPage = () => {
   const HeroSection = () => {
@@ -127,11 +129,8 @@ const LandingPage = () => {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-gray-400 py-4 mt-auto">
-        <div className="container mx-auto text-center">
-          <p>&copy; 2025 HackyLess. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
+
     </div>
   );
 };
