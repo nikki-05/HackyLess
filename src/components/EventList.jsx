@@ -8,11 +8,11 @@ const EventList = () => {
   ];
 
   return (
-    <section id="events" className="py-8">
+    <section id="events" className="py-8 mt-10">
       <h3 className="text-2xl font-bold mb-4">Upcoming Events</h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ml-44 mt-24">
         {events.map((event, index) => (
-          <div key={index} className="bg-white shadow-md rounded p-4 hover:shadow-lg transition">
+          <div key={index} className="bg-white shadow-md rounded p-4 hover:shadow-lg transition w-[300px]">
             <h4 className="text-xl font-semibold">{event.name}</h4>
             <p className="text-gray-600">Date: {event.date}</p>
             <p className="text-gray-600">Location: {event.location}</p>

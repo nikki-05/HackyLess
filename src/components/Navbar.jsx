@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <header className="bg-blue-600 text-white py-4">
+    <header className="sticky top-0 z-50 bg-gradient-to-r from-purple-700 to-blue-600 text-white shadow-lg py-4 text-white py-4">
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Hackyless</h1>
+        <h1 className="text-4xl font-bold cursor-pointer" onClick={() => {navigate("/")}}>Hackyless</h1>
         
         {/* Hamburger Icon */}
         <div className="md:hidden">
@@ -28,10 +29,11 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex space-x-4">
-          <a href="#features" className="hover:underline">Features</a>
-          <a href="#events" className="hover:underline">Events</a>
-          <a href="#contact" className="hover:underline">Contact</a>
+        <nav className="hidden md:flex space-x-4 mr-12">
+          <a href="#features" className="hover:underline text-xl">Features</a>
+          <a href="#events" className="hover:underline text-xl">Events</a>
+          <a href="/contact" className="hover:underline text-xl">Contact</a>
+          <a href="#contact" className="hover:underline text-xl">Login</a>
         </nav>
 
         {/* Mobile Menu */}

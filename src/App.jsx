@@ -31,7 +31,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <Router>      
+    
+    <Router>    
+      <Navbar/>  
       {/* Define the routes */}
       <Routes>
         {/* LandingPage route */}
@@ -40,14 +42,14 @@ const App = () => {
         {/* Other routes */}
         <Route path="/events" element={
           <>
-            <Navbar/>
             <Hero/>
-            <EventList/>
           </>
         } />
         <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/contact" element={<ContactForm />} />
+        <Route path="/contact" element={
+          <ContactForm />} />
       </Routes>
+      <Footer/>
       
     </Router>
   );
