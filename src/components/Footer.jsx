@@ -1,130 +1,55 @@
-// import React from 'react';
-
-// const Footer = () => {
-//   return (
-//     <footer className="bg-gray-800 text-white py-4">
-//       <div className="container mx-auto px-4 text-center">
-//         <p>&copy; 2025 Hackyless. All rights reserved.</p>
-//       </div>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
 import React from 'react';
 
 const Footer = () => {
   return (
- 
+    <footer className="bg-gray-900 text-white py-8">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap justify-between items-center">
+          {/* Logo and Tagline */}
+          <div className="w-full md:w-1/3 text-center md:text-left mb-4 md:mb-0">
+            <h3 className="text-2xl font-bold">Hackyless</h3>
+            <p className="text-gray-400">Your ultimate hackathon guide.</p>
+          </div>
 
-<footer class="bg-white dark:bg-gray-900">
-    <div class="mx-auto w-full max-w-screen-xl">
-      <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
-        <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
-            <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                <li class="mb-4">
-                    <a href="#" class=" hover:underline">About</a>
-                </li>
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">Careers</a>
-                </li>
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">Brand Center</a>
-                </li>
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">Blog</a>
-                </li>
+          {/* Quick Links */}
+          <div className="w-full md:w-1/3 text-center mb-4 md:mb-0">
+            <h4 className="text-lg font-semibold">Quick Links</h4>
+            <ul className="text-gray-400">
+              <li><a href="#features" className="hover:text-blue-400">Features</a></li>
+              <li><a href="#events" className="hover:text-blue-400">Events</a></li>
+              <li><a href="#contact" className="hover:text-blue-400">Contact</a></li>
             </ul>
-        </div>
-        <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Help center</h2>
-            <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">Discord Server</a>
-                </li>
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">Twitter</a>
-                </li>
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">Facebook</a>
-                </li>
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
-            <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">Privacy Policy</a>
-                </li>
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">Licensing</a>
-                </li>
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Download</h2>
-            <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">iOS</a>
-                </li>
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">Android</a>
-                </li>
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">Windows</a>
-                </li>
-                <li class="mb-4">
-                    <a href="#" class="hover:underline">MacOS</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
-        <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2023 <a href="https://HackyLess.com/">HackyLess™</a>. All Rights Reserved.
-        </span>
-        <div class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
-            <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
-                        <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
-                    </svg>
-                  <span class="sr-only">Facebook page</span>
-              </a>
-              <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
-                        <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
-                    </svg>
-                  <span class="sr-only">Discord community</span>
-              </a>
-              <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
-                    <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+          </div>
+
+          {/* Social Media Links */}
+          <div className="w-full md:w-1/3 text-center md:text-right">
+            <h4 className="text-lg font-semibold">Follow Us</h4>
+            <div className="flex justify-center md:justify-end space-x-4 mt-2">
+              <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                <svg className="w-6 h-6 text-gray-400 hover:text-blue-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.36 1.88-2.35-.82.49-1.74.85-2.71 1.04a4.16 4.16 0 0 0-7.09 3.8A11.77 11.77 0 0 1 3.2 4.9a4.16 4.16 0 0 0 1.29 5.55 4.1 4.1 0 0 1-1.88-.52v.05a4.16 4.16 0 0 0 3.33 4.08 4.14 4.14 0 0 1-1.87.07 4.16 4.16 0 0 0 3.88 2.88A8.35 8.35 0 0 1 2 19.54a11.75 11.75 0 0 0 6.29 1.84c7.55 0 11.67-6.26 11.67-11.67v-.53c.8-.58 1.5-1.3 2.05-2.12z" />
                 </svg>
-                  <span class="sr-only">Twitter page</span>
               </a>
-              <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
-                  </svg>
-                  <span class="sr-only">GitHub account</span>
-              </a>
-              <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/>
+              <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <svg className="w-6 h-6 text-gray-400 hover:text-blue-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 5 3.66 9.12 8.44 9.88v-7h-2.5v-2.88h2.5V9.62c0-2.46 1.49-3.8 3.72-3.8 1.08 0 2.2.2 2.2.2v2.44h-1.24c-1.23 0-1.61.77-1.61 1.56v1.88h2.73l-.44 2.88h-2.3v7C18.34 21.12 22 17 22 12z" />
                 </svg>
-                  <span class="sr-only">Dribbble account</span>
               </a>
+              <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg className="w-6 h-6 text-gray-400 hover:text-blue-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.45 3H3.55A2.55 2.55 0 0 0 1 5.55v12.9A2.55 2.55 0 0 0 3.55 21h16.9a2.55 2.55 0 0 0 2.55-2.55V5.55A2.55 2.55 0 0 0 20.45 3zM8.48 18.49H5.81V9.84h2.67v8.65zM7.15 8.61A1.54 1.54 0 1 1 8.68 7a1.54 1.54 0 0 1-1.53 1.61zM18.49 18.49h-2.67v-4.68c0-1.11-.02-2.55-1.56-2.55s-1.8 1.22-1.8 2.48v4.75h-2.67V9.84h2.56v1.18h.04a2.82 2.82 0 0 1 2.54-1.4c2.72 0 3.22 1.79 3.22 4.11v4.76z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Copyright Section */}
+        <div className="text-center mt-8 border-t border-gray-700 pt-4">
+          <p className="text-gray-400">&copy; 2025 Hackyless. All rights reserved.</p>
         </div>
       </div>
-    </div>
-</footer>
-
+    </footer>
   );
 };
 
