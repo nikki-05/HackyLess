@@ -1,5 +1,8 @@
 import React from 'react';
 import './LandingPage.css';
+import Footer from '../components/Footer';  // Ensure the path is correct
+
+
 const LandingPage = () => {
   const HeroSection = () => {
     const text = [
