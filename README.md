@@ -59,7 +59,7 @@ To set up this project locally, follow these steps:
 
 5. Open the app in your browser:
 
-Go to http://localhost:3000 to view the platform.
+
 
 ## Contributing
 We welcome contributions! If you'd like to contribute to the project, follow these steps:
