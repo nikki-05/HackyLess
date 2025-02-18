@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Default Light Mode Styles */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.5s ease, color 0.3s ease;
+}
+
+/* Dark Mode Global Styles */
+body.dark {
+  background-color: #151923 !important; /* Dark background */
+  color: #ffffff !important; /* Light text */
+}
+
+/* Ensure elements respect dark mode */
+body.dark .bg-white {
+  background-color: #151923 !important; /* Dark background for white elements */
+}
+
+body.dark .bg-gray-50 {
+  background-color: #1a1e2b !important; /* Darken the light gray sections */
+}
+
+body.dark .text-black,
+body.dark .text-gray-700 {
+  color: #ffffff !important; /* Make text readable in dark mode */
+}
+
+body.dark .text-gray-300 {
+  color: #d1d5db !important; /* Slightly lighter gray for subtle contrast */
+}
+
+body.dark .bg-gray-100 {
+  background-color: #1f2533 !important; /* Darker gray for better contrast */
+  color: #ffffff !important;
+}
+
+body.dark .bg-gray-800 {
+  background-color: #232c3e !important; /* Slightly lighter gray for depth */
+  color: #ffffff !important;
+}
+
+body.dark .bg-blue-600 {
+  background-color: #3386d4 !important; /* Keep blue readable in dark mode */
+}
+
+/* Transition Fix for Smooth Mode Switch */
+body {
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}

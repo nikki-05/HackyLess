@@ -1,17 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import EventList from './components/EventList';
 import Footer from './components/Footer';
 import Testimonials from './components/Testimonials';
 import ContactForm from './components/ContactForm';
-import LandingPage from './Pages/LandingPage';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
+  // Initially set darkMode based on localStorage value, default to light mode (false)
+  const [darkMode, setDarkMode] = useState(() => localStorage.getItem('darkMode') === 'true');
+
+  React.useEffect(() => {
+    // Toggle dark mode on body based on darkMode state
+    if (darkMode) {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
+
+    // Save darkMode preference to localStorage
+    localStorage.setItem('darkMode', darkMode);
+  }, [darkMode]); // This effect runs when darkMode state changes
+
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Navbar />
+    <div className="min-h-screen">
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <Hero />
       <main className="container mx-auto px-4 py-8">
         <EventList />
@@ -22,36 +35,5 @@ const App = () => {
     </div>
   );
 };
-
-// const App = () => {
-//   return (
-//     <LandingPage/>
-//   );
-// };
-
-// const App = () => {
-//   return (
-    
-//     <Router>    
-//       <Navbar/>  
-//       {/* Define the routes */}
-//       <Routes>
-//         {/* LandingPage route */}
-//         <Route path="/" element={<LandingPage />} />
-        
-//         {/* Other routes */}
-//         <Route path="/events" element={
-//           <>
-//             <Hero/>
-
-//            </>
-//         } />
-//         <Route path="/testimonials" element={<Testimonials />} />
-//         <Route path="/contact" element={<ContactForm />} />
-//        </Routes>
-//       <Footer/>
-//     </Router>
-//   );
-// };
 
 export default App;
